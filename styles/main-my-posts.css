@@ -40,7 +40,7 @@
 .contents{
     display: flex;
     font-size: 10px;
-    gap: 20px;
+    gap: 5%;
 }
 .contents img{
     width: 18px;
