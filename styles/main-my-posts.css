@@ -3,7 +3,7 @@
     background-color: white;
     gap: 10px;
     padding: 10px 20px;
-    width: 100%;
+    width: 47vw;
     height: 150px;
 }
 .post-btn{
@@ -51,4 +51,16 @@
     align-items: center;
     gap: 5px;
     cursor: pointer;
+}
+
+
+@media(max-width:1100px){
+    .add-posts{
+        width: 60vw;
+    }
+}
+@media(max-width:700px){
+    .add-posts{
+        width: 90vw;
+    }
 }
