@@ -1,0 +1,83 @@
+.left-bar{
+    border-right: 2px solid rgb(197, 167, 167);
+}
+
+.imp-links{
+    display: grid;
+    border-bottom: 2px solid rgb(192, 181, 181);
+}
+.imp-links img{
+    width: 28px;
+    /* height: 30px; */
+}
+.left-bar a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+    height: 50px;
+    border-radius: 5px;
+}
+.left-bar a:hover{
+    background-color: #9a929249;
+}
+.imp-links a{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    border-radius: 5px;
+    /* padding: 10px 0; */
+    height: 50px;
+}
+.imp-links a:hover{
+    background-color: #9a929249;
+}
+.imp-links a:last-child{
+    color: rgb(9, 127, 163);
+}
+.imp-links a:last-child:hover{
+    background-color: transparent;
+    color:blue;
+}
+
+
+
+
+/* ShortCut Part */
+.shortcut{
+    display: grid;
+    gap: 15px;
+}
+.shortcut a{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    height: 50px;
+}
+.shortcut-edit{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.shortcut-edit button{
+    padding: 4px 8px;
+    border: none;
+    color: rgba(0, 0, 255, 0.661);
+    cursor: pointer;
+}
+.shortcut-edit button:hover{
+    background-color:#9a929249 ;
+    border-radius: 3px;
+}
+.shortcut a:hover{
+    background-color: #9a929249;
+    
+}

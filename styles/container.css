@@ -1,0 +1,45 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(31, 225, 193); */
+}
+
+.left-bar,.right-bar{
+    flex-basis: 25%;
+    height: 100vh;
+    /* background-color: greenyellow; */
+    padding: 10px 2%;
+    position: sticky;
+    top: 60px;
+    overflow-y: scroll;
+    /* transition: 2s ease-in-out; */
+}
+
+.main{
+    flex-basis: 47%;
+    margin-top: 10px;
+}
+
+
+
+/* Tabate */
+@media(max-width:1100px){
+    .right-bar{
+        display: none;
+    }
+    .main{
+        flex-basis: 73%;
+        padding-right: 20px;
+    }
+}
+
+/* Mobile */
+@media(max-width:700px){
+    .left-bar{
+        display: none;
+    }
+    .main{
+        flex-basis: 98%;
+        padding:0 20px;
+    }
+}
