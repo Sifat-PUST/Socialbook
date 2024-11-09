@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles/container.css">
     <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/creating-post.css">
+    <link rel="stylesheet" href="styles/upload-popup.css">
     <link rel="stylesheet" href="styles/main-my-posts.css">
     <link rel="stylesheet" href="styles/main-story.css">
     <link rel="stylesheet" href="styles/right-sidebar.css">
@@ -43,9 +45,6 @@
             </div>
         </section>
     </header>
-
-
-
 
     <div class="container">
         <!-- Left SideBar -->
@@ -107,7 +106,7 @@
 
 
         <!-- Main Section -->
-        <section class="main">
+        <section class="main" id="main-container">
             <section class="stories">
                 <div class="story-card">
                     <img src="images/sifat.jpg" class="story"> 
@@ -167,18 +166,18 @@
                             <h5>Md. Sifat</h5>
                             <p class="dropdown">Public▾</p>
                         </div>
-                        <button type="submit" id="post-submit">Post</button>
+                        <button type="submit" class="post-btn" id="post-submit">Post</button>
                     </div>
                     
                     <div class="caption">
-                        <input type="text" placeholder="What's on your mind?">
+                        <input type="text" id="caption" placeholder="What's on your mind?">
                     </div>
                     <div class="contents">
                         <div class="live-video">
                             <img src="images/live-video.png" class="post-content">
                             <p>Live Video</p>
                         </div>
-                        <div class="live-video">
+                        <div class="live-video" id="photo-video">
                             <img src="images/photo.png" class="post-content">
                             <p>Photo Video</p>
                         </div>
@@ -186,6 +185,58 @@
                             <img src="images/feeling.png" class="post-content">
                             <p>Feeling Activity</p>
                         </div>
+                    </div>
+
+                    <div class="upload-popup" id="upload-popup">
+                        <div class="popup-content" >
+                            <div class="caption">
+                                <!-- <input type="textarea" id="caption" placeholder="What's on your mind?"> -->
+                                <textarea name="" id="caption2" class="fixed-textarea" placeholder="What's on your mind?"></textarea>
+                            </div>
+                            <label for="uploadfile">Upload File</label>
+                            <input type="file" accept="image/*,video/*" capture="environment" id="uploadfile">
+                            <div class="post-discard">
+                                <button class="discard-btn" id="discard-post">Discard</button>
+                                <button class="post-btn" id="post-submit">Post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="main-post">
+                <div class="post-header">
+                    <div class="profile-img">
+                        <img src="images/sifat.jpg" class="profile-pic" alt="">
+                        <div class="post-info">
+                            <h5 class="post-man-name">Name</h5>
+                            <p class="post-time">Date & Time</p>
+                        </div>
+                    </div>
+                    <div class="post-header-right">
+                        <p class="post-option">⁝</p>
+                        <p class="post-close">×</p>
+                    </div>
+                </div>
+
+                <div class="post-container">
+                    <p class="post-caption">Hello gayes</p>
+                    <img src="images/sifat.jpg" alt="">
+                </div>
+                
+                <div class="post-footer">
+                    <div class="post-action">
+                        <img src="images/like.png" alt="">
+                        <p>Like</p>
+                    </div>
+                    <div class="post-action">
+                        <img src="images/comments.png" alt="">
+                        <p>Comment</p>
+                    </div>
+                    <div class="post-action">
+                        <img src="images/share.png" alt="">
+                        <p>Share</p>
                     </div>
                 </div>
             </section>
@@ -326,5 +377,6 @@
     </footer>
     
     <script src="js/left-bar.js"></script>
+    <script src="js/my-posts.js"></script>
 </body>
 </html>

@@ -16,6 +16,8 @@
     background-color: #0D72F6;
     color: white;
     cursor: pointer;
+    border-radius: 5px;
+    border: none;
 }
 .post-man-info p{
     font-size: 12px;

@@ -1,0 +1,78 @@
+.upload-popup{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.52);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.popup-content{
+    background-color: rgba(173, 104, 104, 0.808);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 20px;
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 20px;
+
+}
+.post-discard{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+.fixed-textarea {
+    width: 40vw;
+    height: 30vh;
+    resize: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(230, 216, 216);
+}
+.popup-content label{
+    background-color: rgba(255, 0, 0, 0.77);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.popup-content #uploadfile{
+    /* display: none; */
+}
+#discard-post{
+    padding: 5px 6px;
+    background-color:#0D72F6;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media(max-width:700px){
+    .popup-content{
+        width: 80vw;
+        height: 60vw;
+        padding: 0 10px;
+        gap: 10px;
+    
+    }
+    .fixed-textarea {
+        width: 70vw;
+        height: 30vw;
+        resize: none;
+        outline: none;
+    }
+    .popup-content label{
+        padding: 2px 8px;
+        border-radius: 5px;
+    }
+}
